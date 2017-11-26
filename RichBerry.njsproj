@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b357b7cd-6648-4c0f-90c7-508212a148b1}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>app.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <NameOfLastUsedPublishProfile>bbmweb - Web Deploy</NameOfLastUsedPublishProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <None Include="bbmweb - Web Deploy.pubxml" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="contributing.md" />
+    <Content Include="README.md" />
+    <Compile Include="app.js" />
+    <Compile Include="config.js" />
+    <Compile Include="routes\chat.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="routes\user.js" />
+    <Content Include="views\blank.html" />
+    <Content Include="views\account.ejs" />
+    <Content Include="views\chat.ejs" />
+    <Content Include="views\index.ejs" />
+    <Content Include="views\layout.ejs" />
+    <Content Include="content\css\rich_chat_style.css" />
+    <Content Include="content\images\aad.png" />
+    <Content Include="content\images\aad2.png" />
+    <Content Include="content\images\broadcast_read.png" />
+    <Content Include="content\images\broadcast_unread.png" />
+    <Content Include="content\images\bubble_menu.png" />
+    <Content Include="content\images\busy.png" />
+    <Content Include="content\images\clock.png" />
+    <Content Include="content\images\close.png" />
+    <Content Include="content\images\contacts_default.png" />
+    <Content Include="content\images\contacts_hover.png" />
+    <Content Include="content\images\contacts_selected.png" />
+    <Content Include="content\images\defaultAvatar.png" />
+    <Content Include="content\images\delivered.png" />
+    <Content Include="content\images\delivered_partial.png" />
+    <Content Include="content\images\draft.png" />
+    <Content Include="content\images\failed.png" />
+    <Content Include="content\images\file.png" />
+    <Content Include="content\images\google.png" />
+    <Content Include="content\images\grey_pellet.png" />
+    <Content Include="content\images\ic_mpc_participants.png" />
+    <Content Include="content\images\ic_start_bbm_chat.png" />
+    <Content Include="content\images\ic_start_bbm_chat_hover.png" />
+    <Content Include="content\images\ic_start_bbm_chat_selected.png" />
+    <Content Include="content\images\ic_start_chat.png" />
+    <Content Include="content\images\ic_start_chat_hover.png" />
+    <Content Include="content\images\ic_start_chat_pressed.png" />
+    <Content Include="content\images\isTyping.png" />
+    <Content Include="content\images\locker_chat_bubble.png" />
+    <Content Include="content\images\media.png" />
+    <Content Include="content\images\menu.png" />
+    <Content Include="content\images\menu_hover.png" />
+    <Content Include="content\images\menu_selected.png" />
+    <Content Include="content\images\msg_retract.png" />
+    <Content Include="content\images\music.png" />
+    <Content Include="content\images\no_chats_guy.png" />
+    <Content Include="content\images\no_contacts_guy.png" />
+    <Content Include="content\images\ping.png" />
+    <Content Include="content\images\read.png" />
+    <Content Include="content\images\read_partial.png" />
+    <Content Include="content\images\sending.png" />
+    <Content Include="content\images\send_disabled.png" />
+    <Content Include="content\images\send_enabled.png" />
+    <Content Include="content\images\send_pressed.png" />
+    <Content Include="content\images\sent.png" />
+    <Content Include="content\images\settings.png" />
+    <Content Include="content\images\settings_selected.png" />
+    <Content Include="content\images\voicenote.png" />
+    <Content Include="content\images\yellow_pellet.png" />
+    <Content Include="content\images\favicon.ico" />
+    <Content Include="content\js\package-lock.json" />
+    <Content Include="content\js\package.json" />
+    <Compile Include="content\js\config.js" />
+    <Compile Include="content\js\documentdb.js" />
+    <Compile Include="content\js\rich_chat_script.js" />
+    <Compile Include="content\js\util.js" />
+    <Compile Include="content\sdk\bbm_sdk_web.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="content" />
+    <Folder Include="content\css" />
+    <Folder Include="content\images" />
+    <Folder Include="content\js" />
+    <Folder Include="content\sdk" />
+    <Folder Include="Node" />
+    <Folder Include="RichBerry" />
+    <Folder Include="RichBerry\RichBerry" />
+    <Folder Include="routes" />
+    <Folder Include="views" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
